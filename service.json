@@ -1,0 +1,17 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+    "name": "livhub-give-service"
+    },
+    "spec": {
+    "ports": [{
+        "port": 80,
+        "targetPort": 3000
+    }],
+    "selector": {
+        "app": "livhub-give"
+    },
+    "type": "LoadBalancer"
+    }
+}
